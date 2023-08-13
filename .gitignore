@@ -1,0 +1,11 @@
+.DS_Store
+*.swp
+*.swo
+
+venv
+__pycache__
+*.pyc
+
+output.txt
+
+emoji_average_colors.txt
