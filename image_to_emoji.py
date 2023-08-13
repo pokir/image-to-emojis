@@ -1,6 +1,5 @@
 import os
-import PIL
-from PIL import Image
+from PIL import Image, UnidentifiedImageError
 import sys
 
 
@@ -33,7 +32,7 @@ try:
     with Image.open(image_path) as im:
         resized = im.resize((width, int(im.size[1] * width / im.size[0])))
 
-except (FileNotFoundError, PIL.UnidentifiedImageError):
+except (FileNotFoundError, UnidentifiedImageError):
     print(f'No image found at "{image_path}".')
 
 pixels = resized.load()

@@ -1,7 +1,6 @@
 import cairosvg
 from io import BytesIO
 import os
-import PIL
 from PIL import Image
 import sys
 
